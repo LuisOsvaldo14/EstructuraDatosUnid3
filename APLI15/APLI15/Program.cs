@@ -1,0 +1,5 @@
+﻿using System.Collections.Generic;
+
+var lista = new List<string> { "a", "b", "c" };
+var tupla = (lista[0], lista[1], lista[2]); // Conversión manual
+Console.WriteLine($"Tupla: {tupla}");
