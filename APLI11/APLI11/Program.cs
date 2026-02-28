@@ -1,0 +1,18 @@
+﻿using System;
+
+class Coche
+{
+    public string color;
+
+    public string ObtenerColor()
+    {
+        return color;
+    }
+
+    static void Main()
+    {
+        Coche miCoche = new Coche();
+        miCoche.color = "Rojo";
+        Console.WriteLine($"El color del coche es: {miCoche.ObtenerColor()}");
+    }
+}
