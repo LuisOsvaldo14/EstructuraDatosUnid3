@@ -1,3 +1,14 @@
-﻿var elementos = (10, 20, 30, 40, 50);
+﻿using System;
+using System.Runtime.CompilerServices;
 
-Console.WriteLine("La tupla tiene 5 elementos.");
+class Program
+{
+    static void Main()
+    {
+        var miTupla = (10, "Hola", true, 5.5);
+
+        ITuple t = miTupla;
+
+        Console.WriteLine($"La tupla tiene {t.Length} elementos.");
+    }
+}
